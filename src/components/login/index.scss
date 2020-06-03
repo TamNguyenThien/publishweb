@@ -1,0 +1,111 @@
+$color_1: #828282;
+$color_2: cornflowerblue;
+$font_family_1: Nunito Sans;
+
+.wrapper {
+	// background-image: url('../../assets/images/background.png');
+	background-size: contain;
+	background-repeat: round;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.logo {
+		// background: url('../../assets/images/logo.png') no-repeat;
+		background-size: contain;
+		width: 200px;
+		height: 50px;
+	}
+	.ant-form {
+		margin-top: 51px;
+		width: 382px;
+		.ant-input {
+			background: rgba(255, 255, 255, 0.7);
+			border-radius: 1px;
+			height: 46px;
+			padding: 14px 20px;
+			border: none;
+			&::placeholder {
+				font-family: $font_family_1;
+				font-size: 13px;
+				color: $color_1;
+			}
+			&:focus {
+				border: none;
+			}
+		}
+		.ant-btn {
+			height: 46px;
+		}
+	}
+	.ant-form-item {
+		margin: 0;
+		padding: 0;
+		&:first-child {
+			margin-bottom: 19px;
+		}
+		&:nth-child(2) {
+			.ant-input-suffix {
+				i {
+					color: $color_1;
+				}
+			}
+		}
+		&:nth-child(3) {
+			margin-top: 15px;
+			margin-bottom: 50px;
+			.ant-form-item-children {
+				display: flex;
+				justify-content: space-between;
+				.ant-checkbox-wrapper {
+					.ant-checkbox-inner {
+						width: 13px;
+						height: 13px;
+						border-radius: 1px;
+					}
+					span {
+						font-family: $font_family_1;
+						font-size: 13px;
+						color: $color_2;
+					}
+				}
+				.forgot-btn {
+					color: $color_2;
+					cursor: pointer;
+					font-family: $font_family_1;
+					font-size: 13px;
+					letter-spacing: 0.01em;
+				}
+			}
+		}
+	}
+	.ant-form-explain {
+		display: none;
+	}
+}
+.error-wrapper {
+	display: flex;
+	opacity: 0;
+	margin-top: 19px;
+	width: 382px;
+	height: 34px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 1px;
+	align-items: center;
+	padding-left: 28px;
+	color: $color_2;
+	.anticon {
+		margin-right: 9px;
+		font-size: 12px;
+		line-height: 12px;
+		svg {
+			fill: rgba(255, 255, 255, 0.1);
+		}
+	}
+	.text {
+		font-family: $font_family_1;
+		font-size: 13px;
+	}
+}

@@ -1,6 +1,5 @@
 {
   "homepage": "https://tamnguyenthien.github.io/publishweb/",
-  
   "name": "new-app",
   "version": "0.1.0",
   "private": true,
@@ -8,8 +7,17 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.2.3",
+    "apollo-boost": "^0.4.9",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.2.2",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {
